@@ -3,9 +3,9 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # OpenAI API credentials
-openai.api_key="HERE-YOUR-OPEN-API-TOKEN"
+openai.api_key="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"
 # Telegram Bot API credentials
-token = "HERE-YOUR-TELEGRAM-API-KEY"
+token = "6083128995:AAE_zm89tWCKrIZqxVJndCIXonN7VhCq6Kk"
 
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Hello {update.effective_user.first_name}')
