@@ -1,15 +1,14 @@
 import openai
-from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+from telegramde  l'importation de télégrammes  
+du  télégramme . ext  import  ApplicationBuilder , CommandHandler , ContextTypes
 
-# OpenAI API credentials
-openai.api_key="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"
-# Telegram Bot API credentials
-token = "6083128995:AAE_zm89tWCKrIZqxVJndCIXonN7VhCq6Kk"
+# identifiants de l'API OpenAI
+openai . api_key = "ICI-VOTRE-OPEN-API-TOKEN"
+# Informations d'identification de l'API Telegram Bot
+token  =  "ICI-VOTRE-TELEGRAM-API-KEY"
 
-async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text(f'Hello {update.effective_user.first_name}')
-
+async  def  hello ( update : Update , context : ContextTypes . DEFAULT_TYPE ) ->  None :
+    attendre la  mise à jour . message . texte_réponse ( f'Bonjour { mise à jour . utilisateur_effectif . prénom } ' )
 async def ask(update, context):
     # Get the user's message
     message = update.message.text.split(" ", 1)[1]
